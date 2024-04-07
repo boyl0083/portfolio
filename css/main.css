@@ -1,4 +1,28 @@
-body {
-    padding-top: 3rem;
-    color: rgb(var(--bs-tertiary-color-rgb));
+.main-banner {
+    background-image: url(../images/Boyle_E_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 640px;
+    width: 100%;
+    position: relative;
 }
+
+.about-banner {
+    background-image: url(../images/Boyle_E_8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 640px;
+    width: 100%;
+    position: relative;
+}
+
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+
