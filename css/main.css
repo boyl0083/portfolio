@@ -1,28 +1,59 @@
-.main-banner {
-    background-image: url(../images/Boyle_E_1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 640px;
-    width: 100%;
-    position: relative;
+@media screen {
+
+    /* CSS FOR HOMEPAGE */
+
+    .main-banner {
+        background-image: url(../images/Boyle_E_1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 640px;
+        width: 100%;
+        position: relative;
+    }
+
+    /* CSS FOR ABOUT PAGE */
+
+    .about-banner {
+        background-image: url(../images/Boyle_E_8.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 640px;
+        width: 100%;
+        position: relative;
+    }
+
+    /* CSS FOR PORTFOLIO PAGE */
+
+    /* creates the grid for portfolio page */
+
+    .work {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .g-img {
+        margin-top: 4rem;
+        border-radius: 0.2rem;
+        filter: drop-shadow(.4rem .4rem 0rem #00000016);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    /* CSS FOR CONTACT PAGE */
+
+    .portfolio-banner {
+        background-image: url(../images/Boyle_E_1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 640px;
+        width: 100%;
+        position: relative;
+    }
+
 }
-
-.about-banner {
-    background-image: url(../images/Boyle_E_8.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 640px;
-    width: 100%;
-    position: relative;
-}
-
-
-.work {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-}
-
-

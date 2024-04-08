@@ -4,7 +4,7 @@ Tell us about your process, challenges you faced during development and how you 
 
 Initially, I developed low-fidelity and high-fidelity Figma prototypes, providing a solid foundation for the design and layout of my portfolio. Transitioning from these designs to actual code involved utilizing Bootstrap, with some personal adjustments, to craft the various pages.
 
-However, the process wasn't without its challenges. One significant hurdle was refining my coded site to better reflect a portfolio rather than a business-oriented website - which I feel that I haven't full succeed in doing and I hope to make more deliberate changes to the design and content to showcase my work and skills effectively.
+However, the process wasn't without its challenges. One significant hurdle was refining my coded site to better reflect a portfolio rather than a business-oriented website - which I feel that I haven't full succeed in doing and I hope to make more deliberate changes to the design and content to showcase my work and skills effectively in future.
 
 Additionally, I incorporated feedback received from my UX class into my final project, such as making my site less text heavy and more content/image orientated, resulting in minor adjustments aimed at enhancing the overall user experience and design of my coded site.
 
