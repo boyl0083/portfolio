@@ -1,21 +1,134 @@
-@media screen {
+:root {
+    --bs-primary: #9FA584;
+    --bs-primary-rgb: 62, 65, 52;
+    --bs-secondary: #FEAEAEA;
+    --bs-secondary-rgb: 234, 234, 234;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+.g-content {
+    margin-top: 1rem;
+    background-color: #ffffff;
+    border-style: solid;
+    border-radius: .2rem;
+    border-color: #9FA584;
+    filter: drop-shadow(.4rem .4rem 0rem #00000016);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.g-content h2 {
+    margin-top: 1rem;
+}
+
+.g-content p {
+    margin-top: 1rem;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+}
+
+@media screen and (min-width: 760px) {
 
     /* CSS FOR HOMEPAGE */
 
+    /* text styles  */
+
+    .display-1 {
+        font-style: normal;
+        font-weight: 31rem;
+        font-size: 6rem;
+        line-height: 8rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: relative;
+        z-index: 1;
+        /* Brings the text to the front */
+    }
+
+    /* css for main banner on home page */
+
     .main-banner {
-        background-image: url(../images/Boyle_E_1.jpg);
+        background-image: url(../images/edit.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         height: 640px;
         width: 100%;
         position: relative;
+    }
+
+    .main-banner::before {
+        content: "main-banner";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Adjust opacity as needed */
+    }
+
+    .main-banner-content {
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: relative;
+        z-index: 1;
+    }
+
+    .main-banner-button {
+        background-color: transparent;
+        box-shadow: 0 5px 0 transparent;
+        outline: none;
+        border: 2px solid white;
+        margin-left: 5px;
+        color: #ffffff;
+        border-radius: 32px;
+        padding-left: 48px;
+        padding-right: 48px;
+        /* font-size: 24px;
+        font-weight: 700; */
+        position: relative;
+        z-index: 1;
+    }
+
+    .main-banner-button:hover {
+        background-color: #9FA584;
+        color: white;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* .about-image {
+        object-fit: ;
+        width: 500px;
+        height: 500px;
+    } */
+
+    /* css to add white space between about and contact section */
+
+    .white-space {
+        display: none;
     }
 
     /* CSS FOR ABOUT PAGE */
 
     .about-banner {
-        background-image: url(../images/Boyle_E_8.jpg);
+        background-image: url(../images/Boyle_E_7.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -24,9 +137,55 @@
         position: relative;
     }
 
+    .about-banner::before {
+        content: "about-banner";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Adjust opacity as needed */
+    }
+
+    .social-icons {
+        position: absolute;
+        width: 10rem;
+        left: 1rem;
+        top: 43rem;
+    }
+
+    .circle-images {
+        position: absolute;
+        width: 20rem;
+        left: 13rem;
+        top: 30rem;
+    }
+
     /* CSS FOR PORTFOLIO PAGE */
 
     /* creates the grid for portfolio page */
+
+    .portfolio-banner {
+        background-image: url(../images/unnamed.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 640px;
+        width: 100%;
+        position: relative;
+    }
+
+    .portfolio-banner::before {
+        content: "portfolio-banner";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Adjust opacity as needed */
+    }
 
     .work {
         display: grid;
@@ -34,8 +193,21 @@
         grid-gap: 1rem;
     }
 
+    .g-content {
+        margin-top: 1rem;
+        background-color: #ffffff;
+        border-style: solid;
+        border-radius: .2rem;
+        border-color: #9FA584;
+        filter: drop-shadow(.4rem .4rem 0rem #00000016);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .g-img {
-        margin-top: 4rem;
+        margin-top: 1rem;
         border-radius: 0.2rem;
         filter: drop-shadow(.4rem .4rem 0rem #00000016);
     }
@@ -44,15 +216,44 @@
         width: 100%;
     }
 
+    .portfolio-button {
+        background-color: transparent;
+        box-shadow: 0 5px 0 transparent;
+        outline: none;
+        border: 1px solid black;
+        width: 30rem;
+        align-items: center;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .portfolio-button:hover {
+        background-color: #9FA584;
+        color: white;
+        position: relative;
+    }
+
     /* CSS FOR CONTACT PAGE */
 
-    .portfolio-banner {
-        background-image: url(../images/Boyle_E_1.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 640px;
-        width: 100%;
+    .contact-banner {
+        position: absolute;
+        width: 530px;
+        height: 808px;
+        left: 70px;
+        top: 148px;
+        background: #9FA584;
+        border-radius: 15px;
+    }
+
+    .contact-form {
+        position: absolute;
+        width: 750px;
+        height: 576px;
+        left: 620px;
+        top: 252px;
+    }
+
+    footer {
         position: relative;
     }
 

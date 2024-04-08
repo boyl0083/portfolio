@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <header data-bs-theme="dark">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Boyle Designs</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
@@ -38,10 +38,6 @@
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>
@@ -51,13 +47,11 @@
 
         <!-- Main Banner -->
 
-        <section class="main-banner" id="home">
-            <div class="container-xl bg-dark bg-opacity-75 text-white">
-                <h1 class="display-1 pt-4 pb-2 my-4">Welcome to Boyle Designs</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam vel velit aperiam sequi quisquam
-                    quod voluptatem, quasi minima nulla pariatur ab voluptate dolor ea ducimus, voluptatum perferendis
-                    quas consequatur neque?</p>
-                <a class="btn btn-primary rounded-0 pt-4 pb-2 my-4 text-dark" href="#contact" role="button">Connect with us <i class="bi bi-caret-right-fill"></i></a>
+        <section class="main-banner py-4" id="home">
+            <div class="container-xl pt-4 pb-2 my-4">
+                <h1 class="display-1">Welcome to Boyle Designs!</h1>
+                <p class="main-banner-content">Hello, I'm Eric Boyle!</p>
+                <a class="main-banner-button btn rounded-1 py-3" href="contact.html" role="button">Let's Connect!<i class="bi bi-caret-right-fill"></i></a>
             </div>
         </section>
 
@@ -133,14 +127,13 @@
             <div class="container-xl">
                 <div class="row">
                     <div class="col-12 col-sm-6">
-                        <img src="images/Schell-E-14.jpg" class="img-fluid my-2" alt="">
+                        <img src="images/picture-of-me.png" class="about-image img-fluid my-2" alt="picture of Eric Boyle">
                     </div>
                     <div class="col-12 col-sm-6">
                         <h2 class="pt-3 pb-1"><strong>About</strong></h2>
                         <h3>Bio</h3>
-                        <p>Eric Boyle, is a 21-year-old student originally from Oshawa, Ontario, has a diverse educational background, which includes a one-year Business certificate from Durham College. He is currently immersing himself in the world of Interactive Media Design at Algonquin College and brings a unique blend of creativity and technological know-how to his academic pursuits!</p>
 
-                        <p>Being in interactive media design has allowed Eric to explore photography and provides him with the means to freeze-frame the beauty of everyday moments. Eric also prioritizes his physical well-being through regular workouts. The discipline and focus cultivated in the gym spill over into his academic and creative pursuits, creating a harmonious...</p>
+                        <p>Eric Boyle, is a 21-year-old student originally from Oshawa, Ontario, has a diverse educational background, which includes a one-year Business certificate from Durham College. He is currently immersing himself in the world of Interactive Media Design at Algonquin College and brings a unique blend of creativity and technological know-how to his academic pursuits!</p>
 
                         <a class="btn btn-dark rounded-0 py-3 w-100" href="#contact" role="button">Read More<i
                             class="bi bi-caret-right-fill"></i></a>
@@ -158,16 +151,15 @@
 
         <!-- Contact Section -->
 
-        <section class="bg-secondary"  width="500" height="700" id="contact">
-            <div class="container-md bg-white">
-                <div class="row">
-                    <div class="col-12 col-sm-6">
-                        
-                        <h2 class="pt-3 pb-1"><strong>Contact</strong></h2>
-                        
-                        <h3>WHY ME AND MY TEAM?</h3>
+        <section class="bg-secondary" id="contact">
+            <div>
+                <div>
+                    <h2 class="contact-heading-2"><strong>Contact</strong></h2>
+
+                    <div>
+                        <h3 class="contact-heading-3">WHY ME AND MY TEAM?</h3>
                        
-                        <p>Choose ‘Me and My Team’ for a partnership fueled by expertise, commitment, and shared vision. Our passionate professionals bring unique skills to the table, dedicated to your success. Join us for a collaborative journey, where together, we craft tailored solutions and celebrate victories.</p>
+                        <p class="contact-text">Choose ‘Me and My Team’ for a partnership fueled by expertise, commitment, and shared vision. Our passionate professionals bring unique skills to the table, dedicated to your success. Join us for a collaborative journey, where together, we craft tailored solutions and celebrate victories.</p>
 
                         <a class="btn btn-dark rounded-0 py-3 w-100" href="#contact" role="button">Read More<i
                             class="bi bi-caret-right-fill"></i></a>
@@ -181,13 +173,13 @@
      <!-- insert hr to add white space between contact section and footer -->
 
      <section class="container-xl my-4">
-        <hr class="featurette-divider">
+        <hr class="white-space">
     </section>
 
 
     <!-- Footer -->
 
-    <footer class="bg-dark text-primary py-4">
+    <footer class="bg-body-tertiary text-primary py-4">
         <div class="container-xl">
             <p>&copy; Boyle Designs 2024</p>
         </div>
