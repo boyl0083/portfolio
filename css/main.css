@@ -5,6 +5,18 @@
     --bs-secondary-rgb: 234, 234, 234;
 }
 
+.btn-bd-primary {
+    background-color: transparent;
+    box-shadow: 0 5px 0 transparent;
+    outline: none;
+    border: 1px solid black;
+}
+
+.btn-bd-primary:hover {
+    background-color: #9FA584;
+    color: white;
+}
+
 .work {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -44,12 +56,12 @@ img {
 
     /* text styles  */
 
-    .display-1 {
+    .banner-text {
+        text-align: center !important;
         font-style: normal;
         font-weight: 31rem;
         font-size: 6rem;
         line-height: 8rem;
-        display: flex;
         align-items: center;
         text-align: center;
         letter-spacing: 0.2px;
@@ -94,7 +106,7 @@ img {
         background-color: transparent;
         box-shadow: 0 5px 0 transparent;
         outline: none;
-        border: 2px solid white;
+        border: 1px solid white;
         margin-left: 5px;
         color: #ffffff;
         border-radius: 32px;
@@ -113,6 +125,10 @@ img {
         z-index: 1;
     }
 
+    .text-center {
+        text-align: center !important;
+    }
+
     /* .about-image {
         object-fit: ;
         width: 500px;
@@ -123,6 +139,11 @@ img {
 
     .white-space {
         display: none;
+    }
+
+    .box-2 {
+        text-align: center !important;
+        filter: drop-shadow(.4rem .4rem 0rem #00000016);
     }
 
     /* CSS FOR ABOUT PAGE */
@@ -146,6 +167,23 @@ img {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         /* Adjust opacity as needed */
+    }
+
+    .contact-heading {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+
+    .contact-heading-2 {
+        font-size: 1.75rem;
+        font-weight: 400;
+        color: #3D3F32;
+    }
+
+    .contact-info {
+        font-size: 1rem;
+        color: #FFFFFF;
     }
 
     .social-icons {
@@ -236,25 +274,20 @@ img {
     /* CSS FOR CONTACT PAGE */
 
     .contact-banner {
-        position: absolute;
+        position: relative;
         width: 530px;
         height: 808px;
         left: 70px;
-        top: 148px;
+        top: 50px;
         background: #9FA584;
         border-radius: 15px;
     }
 
     .contact-form {
-        position: absolute;
-        width: 750px;
-        height: 576px;
-        left: 620px;
-        top: 252px;
-    }
-
-    footer {
         position: relative;
+        width: 750px;
+        left: 300px;
+        top: -700px;
     }
 
 }
