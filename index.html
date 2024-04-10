@@ -1,10 +1,12 @@
-<!doctype html>
-<html lang="en" data-bs-theme="auto">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Boyle Designs</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,12 +18,12 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+        <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top" role="navigation">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Boyle Designs</a>
+                <a class="navbar-brand" href="#" aria-label="Boyle Designs">Boyle Designs</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -49,9 +51,10 @@
 
         <section class="main-banner text-center py-4" id="home">
             <div class="container-xl pt-4 pb-2 my-4">
-                <h1 class="banner-text">Welcome to Boyle Designs!</h1>
+                <h1 class="banner-text" aria-label="Welcome to Boyle Designs">Welcome to Boyle Designs!</h1>
                 <p class="main-banner-content">Hello, I'm Eric Boyle!</p>
-                <a class="main-banner-button btn rounded-1 py-3" href="contact.html" role="button">Let's Connect!<i class="bi bi-caret-right-fill"></i></a>
+                <a class="main-banner-button btn rounded-1 py-3" href="contact.html" role="button">Let's Connect!<i
+                        class="bi bi-caret-right-fill"></i></a>
             </div>
         </section>
 
@@ -62,64 +65,62 @@
             <h2><strong>Services</strong></h2>
 
             <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading fw-normal lh-1">Marketing and Communication Services</h2>
-                    <p>At Boyle Designs, we specialize in crafting personalized marketing and communication
-                        strategies tailored to your unique brand needs. Our services include strategic planning, brand
-                        development, digital marketing, creative content creation, and public relations.</p>
+                <div class="col-md-7 order-md-2 d-flex align-items-center">
+                    <div>
+                        <h2 class="featurette-heading fw-normal lh-1 text-center" aria-label="Marketing and Communication Services">Marketing and Communication Services</h2>
+                        <p>At Boyle Designs, we specialize in crafting personalized marketing and communication
+                            strategies tailored to your unique brand needs. Our services include strategic planning, brand
+                            development, digital marketing, creative content creation, and public relations.</p>
 
-                    <p>Why Choose Me:</p>
+                        <p>Why Choose Me:</p>
 
-                    <ul>
-                        <li>Expertise: Our team brings years of experience and industry knowledge to every project.</li>
-                        <li>Innovation: We stay ahead of the curve with the latest trends and technologies.</li>
-                        <li>Results-Driven: We focus on delivering measurable results that contribute to your business
-                            growth.</li>
-                    </ul>
-
-                    <!-- Re-word to be about you rather than a team -->
-
+                        <ul>
+                            <li>Expertise: Our team brings years of experience and industry knowledge to every project.</li>
+                            <li>Innovation: We stay ahead of the curve with the latest trends and technologies.</li>
+                            <li>Results-Driven: We focus on delivering measurable results that contribute to your business
+                                growth.</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img src="images/Graphic_1.png" alt="" width="500" height="700">
+                    <img src="images/Graphic_1.png" alt="Marketing and Communication Services" class="img-fluid"
+                        aria-labelledby="marketing-image">
                 </div>
             </div>
 
             <hr class="featurette-divider">
 
             <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">Design Services</h2>
-                    <p>At [Your Company Name], we believe that great design is the foundation of effective
-                        communication and branding. Our team of talented designers is dedicated to bringing your vision
-                        to life through innovative and visually stunning solutions.</p>
+                <div class="col-md-7 d-flex align-items-center">
+                    <div>
+                        <h2 class="featurette-heading fw-normal lh-1 text-center" aria-label="Design Services">Design Services</h2>
+                        <p>At [Your Company Name], we believe that great design is the foundation of effective
+                            communication and branding. Our team of talented designers is dedicated to bringing your vision
+                            to life through innovative and visually stunning solutions.</p>
 
-                    <p>What We Offer:</p>
-                    <ol>
-                        <li>Graphic Design: From logos and branding materials to print collateral and digital assets, we
-                            create visually compelling designs that capture the essence of your brand and resonate with
-                            your audience.</li>
-                        <li>Website Design: Your website is often the first point of contact for potential customers. We
-                            design
-                            user-friendly, aesthetically pleasing websites that enhance your online presence and drive
-                            engagement.</li>
-                        <li>UI/UX Design: We prioritize user experience in all our design solutions, ensuring that your
-                            digital
-                            products are intuitive, accessible, and delightful to use.</li>
-                        <li>Branding and Identity: Your brand is more than just a logo; it's a reflection of your values
-                            and
-                            personality. We help you develop a cohesive brand identity that communicates your unique
-                            story and
-                            resonates with your target audience.</li>
-                    </ol>
-
+                        <p>What We Offer:</p>
+                        <ol>
+                            <li>Graphic Design: From logos and branding materials to print collateral and digital assets, we
+                                create visually compelling designs that capture the essence of your brand and resonate with
+                                your audience.</li>
+                            <li>Website Design: Your website is often the first point of contact for potential customers. We
+                                design user-friendly, aesthetically pleasing websites that enhance your online presence and drive
+                                engagement.</li>
+                            <li>UI/UX Design: We prioritize user experience in all our design solutions, ensuring that your
+                                digital products are intuitive, accessible, and delightful to use.</li>
+                            <li>Branding and Identity: Your brand is more than just a logo; it's a reflection of your values
+                                and personality. We help you develop a cohesive brand identity that communicates your unique
+                                story and resonates with your target audience.</li>
+                        </ol>
+                    </div>
                 </div>
                 <div class="col-md-5">
-                    <img src="images/Graphic_2.png" alt="" width="500" height="700">
+                    <img src="images/Graphic_2.png" alt="Design Services" class="img-fluid" aria-labelledby="design-image">
                 </div>
             </div>
 
         </section>
+
 
         <!-- About Us Section -->
 
@@ -127,21 +128,23 @@
             <div class="container-xl">
                 <div class="row">
                     <div class="col-12 col-sm-6">
-                        <img src="images/picture-of-me.png" class="about-image img-fluid my-2" alt="picture of Eric Boyle">
+                        <img src="images/picture-of-me.png" class="about-image img-fluid my-2"
+                            alt="Picture of Eric Boyle" aria-labelledby="eric-image">
                     </div>
-                    <div class="col-12 col-sm-6">
-                        <h2 class="pt-3 pb-1"><strong>About</strong></h2>
-                        <h3>Bio</h3>
+                    <div class="col-12 col-sm-6 d-flex flex-column justify-content-center">
+                        <h2 class="pt-3 pb-1"><strong>So, who am I?</strong></h2>
 
-                        <p>Eric Boyle, is a 21-year-old student originally from Oshawa, Ontario, has a diverse educational background, which includes a one-year Business certificate from Durham College. He is currently immersing himself in the world of Interactive Media Design at Algonquin College and brings a unique blend of creativity and technological know-how to his academic pursuits!</p>
+                        <p>I'm Eric Boyle, a 21-year-old student originally from Oshawa, Ontario. My
+                            educational journey has been diverse, encompassing various fields of study. I hold a
+                            one-year Business certificate from Durham College, and currently, I'm studying Interactive Media Design at Algonquin College. This path allows me to fuse my creativity with technological know-how, shaping a unique approach to my academic pursuits.</p>
 
-                        <a class="btn btn-dark rounded-0 py-3 w-100" href="#contact" role="button">Read More<i
-                            class="bi bi-caret-right-fill"></i></a>
+                        <a class="btn btn-dark rounded-0 py-3 mt-3" href="#contact" role="button">Read More <i
+                                class="bi bi-caret-right-fill"></i></a>
                     </div>
-                    
                 </div>
             </div>
         </section>
+
 
         <!-- insert hr to add white space between about and contact section -->
 
@@ -158,23 +161,37 @@
 
                     <div class="box-2 bg-white text-dark container-xl rounded-3 py-3 px-3 my-4">
                         <h3 class="contact-heading-3">WHY ME AND MY TEAM?</h3>
-                       
+
                         <p class="contact-text">Choose ‘Me and My Team’ for a partnership fueled by expertise, commitment, and shared vision. Our passionate professionals bring unique skills to the table, dedicated to your success. Join us for a collaborative journey, where together, we craft tailored solutions and celebrate victories.</p>
 
                         <a class="btn btn-bd-primary rounded-3 py-3 w-50" href="#contact" role="button">Contact Us<i
-                            class="bi bi-caret-right-fill"></i></a>
+                                class="bi bi-caret-right-fill"></i></a>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
     </main>
 
-    
+
     <!-- Footer -->
 
-    <footer class="bg-body-tertiary text-primary py-4">
+    <footer class="contact-footer bg-body-tertiary text-primary py-4" role="contentinfo">
         <div class="container-xl">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
             <p>&copy; Boyle Designs 2024</p>
         </div>
     </footer>

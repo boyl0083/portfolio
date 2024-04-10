@@ -17,6 +17,10 @@
     color: white;
 }
 
+html {
+    min-width: 320px;
+}
+
 .work {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -49,6 +53,59 @@ img {
     margin-left: 1.3rem;
     margin-right: 1.3rem;
 }
+
+/* CONTACT PAGE */
+
+.contact-banner {
+    position: relative;
+    height: 808px;
+    background: #9FA584;
+}
+
+.contact-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.contact-heading-2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #3D3F32;
+}
+
+.contact-info {
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.social-icons {
+    position: absolute;
+    width: 10rem;
+    left: 1rem;
+    top: 45rem;
+}
+
+.circle-images {
+    position: absolute;
+    width: 25rem;
+    left: 6rem;
+}
+
+#message-text-area {
+    resize: none;
+}
+
+.submit-button {
+    background-color: #9FA584;
+    color: #FFFFFF;
+}
+
+.submit-button:hover {
+    background-color: #9FA584;
+    color: #FFFFFF;
+}
+
 
 @media screen and (min-width: 760px) {
 
@@ -169,36 +226,17 @@ img {
         /* Adjust opacity as needed */
     }
 
-    .contact-heading {
-        font-size: 2rem;
-        font-weight: 600;
-        color: #FFFFFF;
+    .picture-of-me {
+        width: 100%;
     }
 
-    .contact-heading-2 {
-        font-size: 1.75rem;
-        font-weight: 400;
-        color: #3D3F32;
+    .centered-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
-
-    .contact-info {
-        font-size: 1rem;
-        color: #FFFFFF;
-    }
-
-    .social-icons {
-        position: absolute;
-        width: 10rem;
-        left: 1rem;
-        top: 43rem;
-    }
-
-    .circle-images {
-        position: absolute;
-        width: 20rem;
-        left: 13rem;
-        top: 30rem;
-    }
+    
 
     /* CSS FOR PORTFOLIO PAGE */
 
@@ -275,7 +313,7 @@ img {
 
     .contact-banner {
         position: relative;
-        width: 530px;
+        width: 600px;
         height: 808px;
         left: 70px;
         top: 50px;
@@ -288,6 +326,36 @@ img {
         width: 750px;
         left: 300px;
         top: -700px;
+    }
+
+    .contact-heading {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+
+    .contact-heading-2 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: #3D3F32;
+    }
+
+    .contact-info {
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+
+    .social-icons {
+        position: absolute;
+        width: 10rem;
+        left: 1rem;
+        top: 43rem;
+    }
+
+    .circle-images {
+        position: absolute;
+        width: 25rem;
+        left: 12.25rem;
     }
 
 }
