@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Boyle Designs</title>
     <!-- Bulma CSS -->
@@ -17,18 +17,39 @@
 </head>
 
 <body>
-    <header>
+
+    <!-- creates header and nav -->
+
+    <header class="d-flex align-items-center">
         <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top" role="navigation">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#" aria-label="Boyle Designs">Boyle Designs</a>
+
+                <!-- Logo of Boyle Designs -->
+
+                <img src="images/boyle-designs-logo.png" alt="Boyle Designs"
+                    style="width: 50px; height: auto; margin-right: 20px;">
+
+                <!-- Toggle Button -->
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" aria-hidden="true"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+                <!-- Navigation Links -->
+
+                <div class="collapse navbar-collapse align-items-center" id="navbarCollapse">
+
+                    <!-- Site/Company name -->
+
+                    <a class="site-name" href="#" aria-label="Boyle Designs">Boyle Designs</a>
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <!-- Right aligns the ul -->
+
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
@@ -37,10 +58,11 @@
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </div>
+
             </div>
         </nav>
     </header>
@@ -49,11 +71,11 @@
 
         <!-- Main Banner -->
 
-        <section class="main-banner text-center py-4" id="home">
+        <section class="main-banner d-flex align-items-center justify-content-center text-center py-4" id="home">
             <div class="container-xl pt-4 pb-2 my-4">
                 <h1 class="banner-text" aria-label="Welcome to Boyle Designs">Welcome to Boyle Designs!</h1>
                 <p class="main-banner-content">Hello, I'm Eric Boyle!</p>
-                <a class="main-banner-button btn rounded-1 py-3" href="contact.html" role="button">Let's Connect!<i
+                <a class="main-banner-button btn rounded-3 py-3" href="contact.html" role="button">Let's Connect!<i
                         class="bi bi-caret-right-fill"></i></a>
             </div>
         </section>
@@ -62,24 +84,26 @@
 
         <section class="container-xl my-4">
 
-            <h2><strong>Services</strong></h2>
+            <h2 class="featurette-heading fw-normal lh-1 py-2">Services</h2>
 
             <div class="row featurette">
                 <div class="col-md-7 order-md-2 d-flex align-items-center">
                     <div>
-                        <h2 class="featurette-heading fw-normal lh-1 text-center" aria-label="Marketing and Communication Services">Marketing and Communication Services</h2>
-                        <p>At Boyle Designs, we specialize in crafting personalized marketing and communication
-                            strategies tailored to your unique brand needs. Our services include strategic planning, brand
-                            development, digital marketing, creative content creation, and public relations.</p>
+                        <h2 class="featurette-heading fw-normal lh-1 py-2"
+                            aria-label="Marketing and Communication Services">Marketing and Communication Services</h2>
+                        At Boyle Designs, I specialize in crafting personalized marketing and communication strategies
+                        tailored to your unique brand needs. My services include strategic planning, brand development,
+                        digital marketing, creative content creation, and public relations.
 
-                        <p>Why Choose Me:</p>
+                        <p class="lh-1 py-3">Why Choose Me:</p>
+                        <ol>
+                            <li>Expertise: My team and I bring years of experience and industry knowledge to every
+                                project.</li>
+                            <li>Innovation: I stay ahead of the curve with the latest trends and technologies.</li>
+                            <li>Results-Driven: I focus on delivering measurable results that contribute to your
+                                business growth.</li>
+                        </ol>
 
-                        <ul>
-                            <li>Expertise: Our team brings years of experience and industry knowledge to every project.</li>
-                            <li>Innovation: We stay ahead of the curve with the latest trends and technologies.</li>
-                            <li>Results-Driven: We focus on delivering measurable results that contribute to your business
-                                growth.</li>
-                        </ul>
                     </div>
                 </div>
                 <div class="col-md-5 order-md-1">
@@ -93,29 +117,33 @@
             <div class="row featurette">
                 <div class="col-md-7 d-flex align-items-center">
                     <div>
-                        <h2 class="featurette-heading fw-normal lh-1 text-center" aria-label="Design Services">Design Services</h2>
-                        <p>At [Your Company Name], we believe that great design is the foundation of effective
-                            communication and branding. Our team of talented designers is dedicated to bringing your vision
-                            to life through innovative and visually stunning solutions.</p>
+                        <h2 class="featurette-heading fw-normal lh-1 py-2" aria-label="Design Services">Design Services
+                        </h2>
+                        <p>At Boyle Designs, I believe that great design forms the bedrock of effective communication
+                            and branding. My team of talented designers is committed to bringing your vision to life
+                            through innovative and visually stunning solutions.</p>
 
-                        <p>What We Offer:</p>
+                        <p>What I Offer:</p>
                         <ol>
-                            <li>Graphic Design: From logos and branding materials to print collateral and digital assets, we
-                                create visually compelling designs that capture the essence of your brand and resonate with
-                                your audience.</li>
-                            <li>Website Design: Your website is often the first point of contact for potential customers. We
-                                design user-friendly, aesthetically pleasing websites that enhance your online presence and drive
-                                engagement.</li>
-                            <li>UI/UX Design: We prioritize user experience in all our design solutions, ensuring that your
-                                digital products are intuitive, accessible, and delightful to use.</li>
-                            <li>Branding and Identity: Your brand is more than just a logo; it's a reflection of your values
-                                and personality. We help you develop a cohesive brand identity that communicates your unique
-                                story and resonates with your target audience.</li>
+
+                            <li>UI/UX Design: I prioritize user experience in all my design solutions, ensuring that
+                                your digital products are intuitive, accessible, and delightful to use.</li>
+
+                            <li>Website Design: Your website serves as the initial point of contact for potential
+                                customers. I specialize in crafting user-friendly, aesthetically pleasing websites that
+                                bolster your online presence and foster engagement.</li>
+                            <li>Branding and Identity: Your brand extends beyond a mere logo; it mirrors your values and
+                                persona. I assist in cultivating a cohesive brand identity that conveys your unique
+                                narrative and resonates with your target audience.</li>
+                            <li>Graphic Design: From crafting logos and branding materials to producing print collateral
+                                and digital assets, I develop visually captivating designs that encapsulate the essence
+                                of your brand and strike a chord with your audience.</li>
                         </ol>
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <img src="images/Graphic_2.png" alt="Design Services" class="img-fluid" aria-labelledby="design-image">
+                    <img src="images/Graphic_2.png" alt="Design Services" class="img-fluid"
+                        aria-labelledby="design-image">
                 </div>
             </div>
 
@@ -124,61 +152,60 @@
 
         <!-- About Us Section -->
 
-        <section class="bg-secondary" id="about">
+        <section class="about-section bg-secondary" id="about">
             <div class="container-xl">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-12 col-sm-6">
-                        <img src="images/picture-of-me.png" class="about-image img-fluid my-2"
-                            alt="Picture of Eric Boyle" aria-labelledby="eric-image">
+                        <img src="images/picture-of-me.jpg" class="about-image img-fluid my-2"
+                            style="max-width: 100%; height: auto; padding: 10px;" alt="Picture of Eric Boyle"
+                            aria-labelledby="eric-image">
                     </div>
                     <div class="col-12 col-sm-6 d-flex flex-column justify-content-center">
                         <h2 class="pt-3 pb-1"><strong>So, who am I?</strong></h2>
 
                         <p>I'm Eric Boyle, a 21-year-old student originally from Oshawa, Ontario. My
                             educational journey has been diverse, encompassing various fields of study. I hold a
-                            one-year Business certificate from Durham College, and currently, I'm studying Interactive Media Design at Algonquin College. This path allows me to fuse my creativity with technological know-how, shaping a unique approach to my academic pursuits.</p>
+                            one-year Business certificate from Durham College, and currently, I'm studying Interactive
+                            Media Design at Algonquin College. This path allows me to fuse my creativity with
+                            technological know-how, shaping a unique approach to my academic pursuits.</p>
 
-                        <a class="btn btn-dark rounded-0 py-3 mt-3" href="#contact" role="button">Read More <i
+                        <a class="btn btn-bd-primary rounded-3 py-3 mt-3" href="about.html" role="button">Read More <i
                                 class="bi bi-caret-right-fill"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
-
-
-        <!-- insert hr to add white space between about and contact section -->
-
-        <section class="container-xl my-4">
-            <hr class="featurette-divider">
         </section>
 
         <!-- Contact Section -->
 
-        <section class="bg-secondary" id="contact">
+        <section class="contact-section bg-secondary" id="contact">
             <div>
                 <div class="box-1">
-                    <h2 class="contact-heading-2 py-3 px-3 my-4"><strong class="py-3 my-4">Contact</strong></h2>
+                    <h2 class="px-3 pb-1 py-3 my-4"><strong>Contact</strong></h2>
 
-                    <div class="box-2 bg-white text-dark container-xl rounded-3 py-3 px-3 my-4">
-                        <h3 class="contact-heading-3">WHY ME AND MY TEAM?</h3>
+                    <div class="box-2 bg-white text-dark container-xl py-3 px-3 my-4">
+                        <h3 class="contact-heading-2">WHY ME AND MY TEAM?</h3>
 
-                        <p class="contact-text">Choose ‘Me and My Team’ for a partnership fueled by expertise, commitment, and shared vision. Our passionate professionals bring unique skills to the table, dedicated to your success. Join us for a collaborative journey, where together, we craft tailored solutions and celebrate victories.</p>
+                        <p class="contact-text">Choose ‘Me and My Team’ for a partnership fueled by expertise,
+                            commitment, and shared vision. Our passionate professionals bring unique skills to the
+                            table, dedicated to your success. Join us for a collaborative journey, where together, we
+                            craft tailored solutions and celebrate victories.</p>
 
-                        <a class="btn btn-bd-primary rounded-3 py-3 w-50" href="#contact" role="button">Contact Us<i
+                        <a class="btn btn-bd-primary rounded-3 py-3 w-50" href="contact.html" role="button">Contact Us<i
                                 class="bi bi-caret-right-fill"></i></a>
                     </div>
 
                 </div>
             </div>
         </section>
+
+        <!-- Social Media Section -->
+
     </main>
 
-
-    <!-- Footer -->
-
-    <footer class="contact-footer bg-body-tertiary text-primary py-4" role="contentinfo">
-        <div class="container-xl">
-            <ul class="nav flex-column">
+    <footer class="contact-footer bg-body-tertiary py-4" role="contentinfo">
+        <div class="container-xl d-flex justify-content-between align-items-center">
+            <ul class="nav flex-column footer-nav">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
@@ -192,11 +219,15 @@
                     <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
-            <p>&copy; Boyle Designs 2024</p>
+            <p class="mb-0 footer-text">&copy; Boyle Designs 2024</p>
         </div>
     </footer>
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

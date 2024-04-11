@@ -3,6 +3,12 @@
     --bs-primary-rgb: 62, 65, 52;
     --bs-secondary: #FEAEAEA;
     --bs-secondary-rgb: 234, 234, 234;
+    --bs-nav-link-color: black;
+    --bs-nav-link-color: 0, 0, 0;
+    --bs-link-color: black;
+    --bs-link-color: 0, 0, 0;;
+    --bs-link-hover-color: #9FA584;
+    --bs-link-hover-color: 62, 65, 52;
 }
 
 .btn-bd-primary {
@@ -17,18 +23,185 @@
     color: white;
 }
 
-html {
-    min-width: 320px;
-}
-
-.work {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
 }
 
 img {
     width: 100%;
+}
+
+/* HOMEPAGE CSS */
+
+.banner-text {
+    text-align: center !important;
+    font-style: normal;
+    font-weight: 31rem;
+    font-size: 6rem;
+    line-height: 8rem;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1;
+    /* Brings the text to the front */
+}
+
+.main-banner {
+    background-image: url(../images/edit.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 640px;
+    width: 100%;
+    position: relative;
+}
+
+.main-banner::before {
+    content: "main-banner";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-banner-content {
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1;
+}
+
+.main-banner-button {
+    background-color: transparent;
+    box-shadow: 0 5px 0 transparent;
+    outline: none;
+    border: 1px solid white;
+    margin-left: 5px;
+    color: #ffffff;
+    border-radius: 32px;
+    padding-left: 48px;
+    padding-right: 48px;
+    position: relative;
+    z-index: 1;
+}
+
+.main-banner-button:hover {
+    background-color: #9FA584;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.text-center {
+    text-align: center !important;
+} */
+
+.contact-heading-1 {
+    font-style: normal;
+    font-weight: 43.75rem;
+    font-size: 3.125rem;
+}
+
+.site-name {
+    display: none;
+}
+
+.footer-nav {
+    color: black;
+}
+
+.contact-footer {
+    position: relative;
+}
+
+.footer-text {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.75rem;
+}
+
+
+/* ABOUT PAGE */
+
+.about-banner {
+    background-image: url(../images/Boyle_E_7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 640px;
+    width: 100%;
+    position: relative;
+}
+
+.about-banner::before {
+    content: "about-banner";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity as needed */
+}
+
+.mission-background {
+    background-color: white;
+}
+
+.social-media-heading {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+}
+
+.social-media-button {
+    background-color: transparent;
+    box-shadow: 0 5px 0 transparent;
+    outline: none;
+    border: 1px solid black;
+    margin-left: 5px;
+    color: black;
+    padding-left: 48px;
+    padding-right: 48px;
+    position: relative;
+    z-index: 1;
+}
+
+.social-media-button:hover {
+    background-color: #9FA584;
+    border: none;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+/* PORTFOLIO PAGE CSS */
+
+.portfolio-banner {
+    background-image: url(../images/unnamed.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 640px;
+    width: 100%;
+    position: relative;
+}
+
+.portfolio-banner::before {
+    content: "portfolio-banner";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .g-content {
@@ -111,101 +284,34 @@ img {
 
     /* CSS FOR HOMEPAGE */
 
-    /* text styles  */
+    /* navigation css */
 
-    .banner-text {
-        text-align: center !important;
-        font-style: normal;
-        font-weight: 31rem;
-        font-size: 6rem;
-        line-height: 8rem;
-        align-items: center;
-        text-align: center;
-        letter-spacing: 0.2px;
-        color: #FFFFFF;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        position: relative;
-        z-index: 1;
-        /* Brings the text to the front */
+    .site-name {
+        display: block;
+        color: black;
+        text-decoration: none;
+        font-weight: 25rem;
+        font-size: 1.5rem;
     }
 
-    /* css for main banner on home page */
-
-    .main-banner {
-        background-image: url(../images/edit.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 640px;
-        width: 100%;
-        position: relative;
+    .about-section {
+        margin-bottom: 80px;
     }
 
-    .main-banner::before {
-        content: "main-banner";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        /* Adjust opacity as needed */
-    }
-
-    .main-banner-content {
-        color: #FFFFFF;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        position: relative;
-        z-index: 1;
-    }
-
-    .main-banner-button {
-        background-color: transparent;
-        box-shadow: 0 5px 0 transparent;
-        outline: none;
-        border: 1px solid white;
-        margin-left: 5px;
-        color: #ffffff;
-        border-radius: 32px;
-        padding-left: 48px;
-        padding-right: 48px;
-        /* font-size: 24px;
-        font-weight: 700; */
-        position: relative;
-        z-index: 1;
-    }
-
-    .main-banner-button:hover {
-        background-color: #9FA584;
-        color: white;
-        position: relative;
-        z-index: 1;
-    }
-
-    .text-center {
-        text-align: center !important;
-    }
-
-    /* .about-image {
-        object-fit: ;
-        width: 500px;
-        height: 500px;
-    } */
-
-    /* css to add white space between about and contact section */
-
-    .white-space {
-        display: none;
+    .contact-section {
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 
     .box-2 {
         text-align: center !important;
         filter: drop-shadow(.4rem .4rem 0rem #00000016);
+        bottom: 10px;
     }
 
     /* CSS FOR ABOUT PAGE */
 
-    .about-banner {
+    /* .about-banner {
         background-image: url(../images/Boyle_E_7.jpg);
         background-size: cover;
         background-position: center;
@@ -223,7 +329,36 @@ img {
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
-        /* Adjust opacity as needed */
+    } */
+
+    .social-media-heading {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .social-media-button {
+        background-color: transparent;
+        box-shadow: 0 5px 0 transparent;
+        outline: none;
+        border: 1px solid black;
+        margin-left: 5px;
+        width: 425px;
+        color: black;
+        padding-left: 48px;
+        padding-right: 48px;
+        /* font-size: 24px;
+        font-weight: 700; */
+        position: relative;
+        z-index: 1;
+    }
+
+    .social-media-button:hover {
+        background-color: #9FA584;
+        border: none;
+        color: white;
+        position: relative;
+        z-index: 1;
     }
 
     .picture-of-me {
@@ -236,13 +371,10 @@ img {
         align-items: center;
         height: 100%;
     }
-    
 
     /* CSS FOR PORTFOLIO PAGE */
 
-    /* creates the grid for portfolio page */
-
-    .portfolio-banner {
+    /* .portfolio-banner {
         background-image: url(../images/unnamed.jpg);
         background-size: cover;
         background-position: center;
@@ -260,8 +392,9 @@ img {
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
-        /* Adjust opacity as needed */
-    }
+    } */
+
+    /* creates the grid for portfolio page */
 
     .work {
         display: grid;
@@ -321,6 +454,10 @@ img {
         border-radius: 15px;
     }
 
+    .contact-main {
+        height: 900px;
+    }
+
     .contact-form {
         position: relative;
         width: 750px;
@@ -357,5 +494,4 @@ img {
         width: 25rem;
         left: 12.25rem;
     }
-
 }

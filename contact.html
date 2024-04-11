@@ -22,16 +22,34 @@
 
     <!-- creates header and nav -->
 
-    <header>
+    <header class="d-flex align-items-center">
         <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top" role="navigation">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Boyle Designs</a>
+
+                <!-- Logo of Boyle Designs -->
+
+                <img src="images/boyle-designs-logo.png" alt="Boyle Designs"
+                    style="width: 50px; height: auto; margin-right: 20px;">
+
+                <!-- Toggle Button -->
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+                <!-- Navigation Links -->
+
+                <div class="collapse navbar-collapse align-items-center" id="navbarCollapse">
+                    
+                    <!-- Site/Company name -->
+
+                    <a class="site-name" href="#" aria-label="Boyle Designs">Boyle Designs</a>
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <!-- Right aligns the ul -->
+
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
@@ -46,71 +64,120 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
         </nav>
     </header>
-
+    
     <main>
 
         <!-- Skip Links -->
 
         <a href="#contact-form">Skip to main content</a>
 
-        <!-- Contact Banner -->
+        <section class="contact-main">
 
-        <section class="contact-banner" id="contact" role="banner">
-            <div class="container-xl pt-4 pb-2 my-4">
-                <h1 class="contact-heading">Contact Information</h1>
-                <p class="contact-heading-2">Say something to start a chat!</p>
+            <!-- Contact Banner -->
+
+            <div class="contact-banner" id="contact" role="banner">
+                <div class="container-xl pt-4 pb-2 my-4">
+                    <h1 class="contact-heading">Contact Information</h1>
+                    <p class="contact-heading-2">Say something to start a chat!</p>
+                </div>
+                <div class="contact-info container-xl pt-4 pb-2 my-4">
+                    <p><i class="bi bi-telephone px-1"></i>613-475-0289</p>
+                    <p><i class="bi bi-envelope px-1"></i>boyledesigns@gmail.com</p>
+                    <p><i class="bi bi-geo-alt px-1"></i>132 Dartmouth Street Ottawa, Ontario K2C 0R9 Canada</p>
+                </div>
+                <div>
+                    <img class="social-icons" src="images/circles-social-media-icons.png" alt="Social Media Icons">
+                    <img class="circle-images" src="images/two-circles-image.png" alt="Circle Images">
+                </div>
             </div>
-            <div class="contact-info container-xl pt-4 pb-2 my-4">
-                <p><i class="bi bi-telephone px-1"></i>613-475-0289</p>
-                <p><i class="bi bi-envelope px-1"></i>boyledesigns@gmail.com</p>
-                <p><i class="bi bi-geo-alt px-1"></i>132 Dartmouth Street Ottawa, Ontario K2C 0R9 Canada</p>
-            </div>
-            <div>
-                <img class="social-icons" src="images/circles-social-media-icons.png" alt="Social Media Icons">
-                <img class="circle-images" src="images/two-circles-image.png" alt="Circle Images">
+
+            <!-- Contact Form Section -->
+
+            <div class="contact-form container-xl my-4" id="contact-form" role="form">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="first-name-text-area" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="first-name-text-area" placeholder="John"
+                            aria-label="First name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="last-name-text-area" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="last-name-text-area" placeholder="Doe"
+                            aria-label="Last name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email-text-area" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email-text-area" placeholder="name@example.com"
+                            aria-label="Email Address">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone-text-area" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone-text-area" placeholder="(613)-123-4567"
+                            aria-label="Phone">
+                    </div>
+                    <div class="mb-3">
+                        <label for="disabledSelect" class="form-label">Disabled select menu</label>
+                        <select id="disabledSelect" class="form-select">
+                            <option>Disabled select</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="message-text-area" class="form-label">Message</label>
+                        <textarea class="form-control" id="message-text-area" rows="3" aria-label="Message"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="submit-button btn w-50">Submit</button>
+                    </div>
+                </form>
             </div>
         </section>
 
-        <!-- Contact Form Section -->
+        <!-- Social Media Section -->
 
-        <section class="contact-form container-xl my-4" id="contact-form" role="form">
-            <form class="row g-3">
-                <div class="col-md-6"> 
-                    <label for="first-name-text-area" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="first-name-text-area" placeholder="John" aria-label="First name">
+        <section class="bg-secondary py-4 px-4 my-4" id="social-media">
+            <h2 class="social-media-heading">follow me on instagram</h2>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div>
+                            <img class="rounded-2" src="images/Saturday-4.jpg" alt="Placeholder image">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6"> 
-                    <label for="last-name-text-area" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="last-name-text-area" placeholder="Doe" aria-label="Last name">
+                <div class="column">
+                    <div class="card">
+                        <div>
+                            <img class="rounded-2" src="images/Boyle_E_1.jpg" alt="Placeholder image">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6"> 
-                    <label for="email-text-area" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email-text-area" placeholder="name@example.com" aria-label="Email Address">
+                <div class="column">
+                    <div class="card">
+                        <div>
+                            <img class="rounded-2" src="images/Boyle_E_2.jpg" alt="Placeholder image">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6"> 
-                    <label for="phone-text-area" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="phone-text-area" placeholder="(613)-123-4567" aria-label="Phone">
-                </div>
-                <div class="col-12">
-                    <label for="message-text-area" class="form-label">Message</label>
-                    <textarea class="form-control" id="message-text-area" rows="3" aria-label="Message"></textarea>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="submit-button btn w-50">Submit</button>
-                </div>
-            </form>
+            </div>
+            <div class="has-text-centered">
+                <a href="https://www.instagram.com/eric.boyle_photography/" class="social-media-link">
+                    <button class="social-media-button button">@eric.boyle_photography</button>
+                </a>
+            </div>
         </section>
+
 
     </main>
 
     <!-- Footer -->
 
-    <footer class="contact-footer bg-body-tertiary text-primary py-4" role="contentinfo">
-        <div class="container-xl">
-            <ul class="nav flex-column">
+    <footer class="contact-footer bg-body-tertiary py-4" role="contentinfo">
+        <div class="container-xl d-flex justify-content-between align-items-center">
+            <ul class="nav flex-column footer-nav">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
@@ -124,9 +191,11 @@
                     <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
-            <p>&copy; Boyle Designs 2024</p>
+            <p class="mb-0 footer-text">&copy; Boyle Designs 2024</p>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
